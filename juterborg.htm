@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>juterborg</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body link="#FFFF00" vlink="#C0C0C0" alink="#FFFF00" text="#FFFFFF" bgcolor="#000000" onload="FP_preloadImgs(/*url*/'../juterborg1/buttonE.jpg',/*url*/'../juterborg1/buttonD.jpg',/*url*/'../JUTERBORG2/button7.jpg',/*url*/'../JUTERBORG2/button6.jpg')">
+
+<p align="center"><a href="juterborg.htm">
+<img border="0" src="../juterborg1/&#1051;&#1086;&#1075;&#1086;&#1090;&#1080;&#1087;.png" width="892" height="233"></a></p>
+<p align="center">&nbsp;</p>
+
+<p align="center"><a href="JUTERBORG/reclamatio1-10.htm">
+<img border="0" id="img1" src="../juterborg1/buttonC.jpg" height="43" width="131" alt="&#1056;&#1077;&#1082;&#1083;&#1072;&#1084;&#1072;&#1094;&#1080;&#1103;" fp-style="fp-btn: Embossed Tab 4; fp-font-size: 16; fp-bgcolor: #000000; fp-orig: 0" fp-title="&#1056;&#1077;&#1082;&#1083;&#1072;&#1084;&#1072;&#1094;&#1080;&#1103;" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'../juterborg1/buttonD.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'../juterborg1/buttonC.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'../juterborg1/buttonE.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'../juterborg1/buttonD.jpg')"></a><span lang="ru">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../juterborg1/gar001.htm">
+<img border="0" id="img2" src="../JUTERBORG2/button5.jpg" height="43" width="131" alt="" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'../JUTERBORG2/button6.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'../JUTERBORG2/button5.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'../JUTERBORG2/button7.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'../JUTERBORG2/button6.jpg')" fp-style="fp-btn: Embossed Tab 4; fp-font-size: 16; fp-bgcolor: #000000; fp-orig: 0" fp-title></a></span></p>
+
+</body>
+
+</html>
